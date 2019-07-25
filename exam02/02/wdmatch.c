@@ -10,7 +10,7 @@ void    wdmatch(char *s1, char *s2)
     while (*s2 && i < len)
         (*s2++ == s1[i]) ? ++i : 0;
     if (i == len)
-        write (1, s, len);
+        write (1, s1, len);
 }
 
 int main(int ac, char **av)
